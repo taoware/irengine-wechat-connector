@@ -1,0 +1,26 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+.springBeans
+
+# WebStorm project files
+.idea
+
+# Workspace
+.metadata
+RemoteSystemsTempFiles
+Servers
+
+# AngularJS
+node_modules
+
+# Others
+target/
+logs/
+*.log
+*.epoch
+*.db
+
+# OS X
+.DS_Store
