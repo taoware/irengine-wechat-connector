@@ -1,0 +1,22 @@
+{
+	"menu":
+		{
+		   "button":[
+		      {
+		         "name":"派赠活动",
+		         "sub_button":[
+		            {
+		               "type":"view",
+		               "name":"今日派赠",
+		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Ftoday%2F&response_type=code&scope=snsapi_base#wechat_redirect"
+		            },
+		            {
+		               "type":"view",
+		               "name":"获取openid",
+		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Fopenid%2F&response_type=code&scope=snsapi_base#wechat_redirect"
+		            }
+		         ]
+		      }
+		   ]
+		}
+}

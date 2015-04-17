@@ -1,5 +1,7 @@
 package com.irengine.wechat.connector;
 
+import java.io.IOException;
+
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -19,7 +21,14 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 	  @Override
 	  public void onApplicationEvent(final ContextRefreshedEvent event) {
 
-		  System.out.println("===============Bootstrap===============");
-		  return;
+		System.out.println("===============Bootstrap===============");
+		try {
+			WeChatConnector.init();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("==================end==================");
+		return;
 	  }
 }
