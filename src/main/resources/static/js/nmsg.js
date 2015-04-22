@@ -2,6 +2,8 @@ var InterValObj; //timer变量，控制时间
 var count = 30; //间隔函数，1秒执行
 var curCount;//当前剩余秒数
 var code = ""; //验证码
+var word1 ="尊敬的注册用户，手机验证码：";
+var word2 =",感谢您的使用！如非本人操作，请忽略。";
 var codeLength = 6;//验证码长度
 function sendMessage() {
 	curCount = count;
@@ -26,10 +28,15 @@ function sendMessage() {
 
 	//向后台发送处理数据
 		$.ajax({
-			type: "POST", //用POST方式传输
+		headers: {
+            "Accept" : "text/plain; charset=utf-8",
+            "Content-Type": "text/plain; charset=utf-8"
+        },
+			
+			type: "GET", 
 			dataType: "text", //数据格式:JSON
-			url: '', //目标地址
-			data: "phone=" + phone + "&code=" + code,
+			url: 'http://vps1.taoware.com/notify', //目标地址
+			data: "mobile=" + phone + "&message="+ word1 + code + word2,
 			error: function (XMLHttpRequest, textStatus, errorThrown) { },
 			success: function (msg){ }
 		});
@@ -48,3 +55,21 @@ function SetRemainTime() {
 		$("#setcode").val("剩余" + curCount + "秒");
 	}
 }
+
+
+//注册页面跳转
+function submit(){
+	var passcode = $(".password").val();
+	if (passcode == code){
+        document.registerForm.submit();
+	} else{
+		alert("验证码输入错误");
+		/*$(".password").addclass(".phone1");*/
+	}
+	
+};
+
+
+
+
+

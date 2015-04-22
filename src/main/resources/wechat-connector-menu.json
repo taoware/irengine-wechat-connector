@@ -12,8 +12,8 @@
 		            },
 		            {
 		               "type":"view",
-		               "name":"获取openid",
-		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Fopenid%2F&response_type=code&scope=snsapi_base#wechat_redirect"
+		               "name":"查询赠券",
+		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Fquery%2F&response_type=code&scope=snsapi_base#wechat_redirect"
 		            }
 		         ]
 		      }
