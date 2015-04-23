@@ -8,12 +8,12 @@
 		            {
 		               "type":"view",
 		               "name":"今日派赠",
-		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Ftoday%2F&response_type=code&scope=snsapi_base#wechat_redirect"
+		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa1c8a107ae33becc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Ftoday%2F&response_type=code&scope=snsapi_base#wechat_redirect"
 		            },
 		            {
 		               "type":"view",
 		               "name":"查询赠券",
-		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx937bc2db60604bbc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Fquery%2F&response_type=code&scope=snsapi_base#wechat_redirect"
+		               "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxa1c8a107ae33becc&redirect_uri=http%3A%2F%2Fvps1.taoware.com%2Fquery%2F&response_type=code&scope=snsapi_base#wechat_redirect"
 		            }
 		         ]
 		      }
